@@ -1,0 +1,5 @@
+REGISTRO DE PEDIDO
+Cliente ID: 1
+Producto: calculadora
+Cantidad: 1
+Estado: pendiente

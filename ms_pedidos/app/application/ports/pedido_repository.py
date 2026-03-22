@@ -4,7 +4,7 @@ from app.domain.pedidos import Pedido
 class PedidoRepository(ABC):
 
     @abstractmethod
-    def crear(self, pedido: Pedido):
+    def crear(self, pedido):
         pass
 
     @abstractmethod
@@ -12,7 +12,7 @@ class PedidoRepository(ABC):
         pass
 
     @abstractmethod
-    def actualizar(self, id_pedido: int, pedido: Pedido):
+    def actualizar(self, id_pedido: int, pedido):
         pass
 
     @abstractmethod

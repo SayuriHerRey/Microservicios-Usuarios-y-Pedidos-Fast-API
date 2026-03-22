@@ -1,0 +1,5 @@
+REGISTRO DE USUARIO
+Nombre: sayu
+Email: sayu05@gmail.com
+Telefono: 1234567890
+Direccion: por ahi

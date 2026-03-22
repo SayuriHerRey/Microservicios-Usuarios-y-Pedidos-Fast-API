@@ -1,18 +1,15 @@
-from app.application.ports.user_repository import UserRepository
-from app.domain.user import User
-
 class UserService:
 
-    def __init__(self, repository: UserRepository):
+    def __init__(self, repository):
         self.repository = repository
 
-    def crear_user(self, user: User):
+    def crear_user(self, user):
         return self.repository.crear(user)
 
     def listar_users(self):
         return self.repository.listar()
 
-    def actualizar_user(self, id_user: int, user: User):
+    def actualizar_user(self, id_user: int, user):
         return self.repository.actualizar(id_user, user)
 
     def eliminar_user(self, id_user: int):

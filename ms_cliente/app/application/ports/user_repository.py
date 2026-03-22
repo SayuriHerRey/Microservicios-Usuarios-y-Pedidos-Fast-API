@@ -4,7 +4,7 @@ from app.domain.user import User
 class UserRepository(ABC):
 
     @abstractmethod
-    def crear(self, user: User):
+    def crear(self, user):
         pass
 
     @abstractmethod
@@ -12,7 +12,7 @@ class UserRepository(ABC):
         pass
 
     @abstractmethod
-    def actualizar(self, id_user: int, user: User):
+    def actualizar(self, id_user: int, user):
         pass
 
     @abstractmethod
