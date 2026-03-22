@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from domain.pedidos import Pedido
+from app.domain.pedidos import Pedido
 
 class PedidoRepository(ABC):
 
@@ -9,6 +9,10 @@ class PedidoRepository(ABC):
 
     @abstractmethod
     def listar(self):
+        pass
+
+    @abstractmethod
+    def actualizar(self, id_pedido: int, pedido: Pedido):
         pass
 
     @abstractmethod
